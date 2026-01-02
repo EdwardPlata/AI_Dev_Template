@@ -1,0 +1,22 @@
+{
+  "name": "ai-dev-template",
+  "version": "1.0.0",
+  "description": "A comprehensive template for AI-enabled development",
+  "main": "index.js",
+  "scripts": {
+    "mcp:status": "echo 'Checking MCP servers...'",
+    "mcp:start": "echo 'MCP servers are configured to start automatically'",
+    "test": "echo 'No tests specified yet'"
+  },
+  "keywords": [
+    "ai",
+    "copilot",
+    "claude",
+    "mcp",
+    "development-template"
+  ],
+  "author": "Edward Plata",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
