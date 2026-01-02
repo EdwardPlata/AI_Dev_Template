@@ -1,0 +1,38 @@
+{
+  "speckit": {
+    "version": "1.0",
+    "templates": {
+      "api": {
+        "path": "./specs/api",
+        "format": "openapi",
+        "autoGenerate": true
+      },
+      "features": {
+        "path": "./specs/features",
+        "format": "gherkin"
+      },
+      "architecture": {
+        "path": "./specs/architecture",
+        "format": "markdown"
+      }
+    },
+    "documentation": {
+      "output": "./docs",
+      "formats": ["html", "markdown", "pdf"]
+    },
+    "validation": {
+      "enabled": true,
+      "strictMode": false
+    },
+    "integrations": {
+      "github": {
+        "enabled": true,
+        "syncOnCommit": true
+      },
+      "cicd": {
+        "enabled": true,
+        "validateOnPR": true
+      }
+    }
+  }
+}
