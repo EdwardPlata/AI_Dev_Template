@@ -1,0 +1,32 @@
+{
+  // Use the universal dev container base image that supports Node and Python.
+  "image": "mcr.microsoft.com/devcontainers/universal:latest",
+
+  // Install Node.js (LTS) and Python 3.11 via devcontainer features.
+  "features": {
+    "ghcr.io/devcontainers/features/node": {
+      "version": "lts"
+    },
+    "ghcr.io/devcontainers/features/python": {
+      "version": "3.11"
+    }
+  },
+
+  // Customize VS Code inside Codespaces: recommend Copilot extensions and enable MCP.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot-chat",
+        "GitHub.copilot"
+      ],
+      "settings": {
+        // Ensure agent capabilities via Model Context Protocol.
+        "chat.mcp.enabled": true
+      }
+    }
+  },
+
+  // Automatically install the `uv` Python package after the container is created.
+  // This ensures that the Spec\u00a0Kit CLI can be executed via `uvx`.
+  "postCreateCommand": "pip install uv"
+}
