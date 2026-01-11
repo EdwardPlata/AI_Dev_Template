@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "SpecKit": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "spec-kit-mcp"]
+    }
+  }
+}
